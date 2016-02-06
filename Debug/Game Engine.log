@@ -1,0 +1,37 @@
+﻿Build started 06/02/2016 02:33:00.
+     1>Project "E:\VS2013\Game Engine\Game Engine\Game Engine.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         E:\Program Files\Visual Studio 2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Engine.cpp Game.cpp System.cpp UObject.cpp WinMain.cpp
+         WinMain.cpp
+         UObject.cpp
+         System.cpp
+         Game.cpp
+         Engine.cpp
+     1>e:\vs2013\game engine\game engine\uobject.h(5): error C2011: 'UObject' : 'class' type redefinition
+                 e:\vs2013\game engine\game engine\uobject.h(5) : see declaration of 'UObject'
+     1>e:\vs2013\game engine\game engine\system.h(7): error C2011: 'SystemType' : 'enum' type redefinition
+                 e:\vs2013\game engine\game engine\system.h(7) : see declaration of 'SystemType'
+     1>e:\vs2013\game engine\game engine\system.h(16): error C2011: 'SystemData' : 'struct' type redefinition
+                 e:\vs2013\game engine\game engine\system.h(16) : see declaration of 'SystemData'
+     1>e:\vs2013\game engine\game engine\system.h(20): error C2011: 'System' : 'class' type redefinition
+                 e:\vs2013\game engine\game engine\system.h(20) : see declaration of 'System'
+     1>e:\vs2013\game engine\game engine\game.h(6): error C2504: 'SystemData' : base class undefined
+     1>e:\vs2013\game engine\game engine\game.h(12): error C2504: 'System' : base class undefined
+     1>e:\vs2013\game engine\game engine\engine.cpp(86): warning C4150: deletion of pointer to incomplete type 'System'; no destructor called
+                 e:\vs2013\game engine\game engine\system.h(20) : see declaration of 'System'
+     1>e:\vs2013\game engine\game engine\engine.cpp(93): error C2027: use of undefined type 'System'
+                 e:\vs2013\game engine\game engine\system.h(20) : see declaration of 'System'
+     1>e:\vs2013\game engine\game engine\engine.cpp(93): error C2227: left of '->GetType' must point to class/struct/union/generic type
+     1>e:\vs2013\game engine\game engine\engine.cpp(94): error C3536: 'element': cannot be used before it is initialized
+     1>e:\vs2013\game engine\game engine\engine.cpp(94): error C2228: left of '.second' must have class/struct/union
+                 type is 'int'
+     1>e:\vs2013\game engine\game engine\engine.cpp(99): error C2664: 'int Engine::AddSystem(System *)' : cannot convert argument 1 from 'Game *' to 'System *'
+                 Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+     1>e:\vs2013\game engine\game engine\engine.cpp(101): error C2027: use of undefined type 'SystemType'
+                 e:\vs2013\game engine\game engine\system.h(7) : see declaration of 'SystemType'
+         Generating Code...
+     1>Done Building Project "E:\VS2013\Game Engine\Game Engine\Game Engine.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.90
